@@ -232,4 +232,13 @@ Cursograma 12
 
 ![4](https://user-images.githubusercontent.com/78242717/162631288-14f1a936-fc36-43df-ae43-08258a2d5cd0.jpg)
 
-        
+
+	Portada
+Objetivo: Administrar y gestionar el delivery de los pedidos de locales de comida rápida.
+
+
+Contexto:
+
+![13](https://user-images.githubusercontent.com/78242717/162631432-d813595e-4e51-49c0-95e1-84f50947ca3a.png)
+
+
