@@ -5,10 +5,6 @@ Base de datos de un servicio ficticio de delivery para cadenas de comida rapida 
     
         Indice
 
-Historia y Objetivo.
-
-Relevamiento.
-
 Circuitos:
 
 
@@ -30,95 +26,6 @@ Cuaderno de Carga:
 -Diseño de Salidas.
 
 -Supuestos.
-
-
-            Historia
-           
-La empresa de reparto a domicilio “Fasty” fue creada en los años 80. Inicialmente como una salvación para una familia de tres hijos entre diecisiete y veinticuatro años, un padre desaparecido y una madre sin trabajo. Estos tres chicos, dispuestos a sacar adelante a la familia, compraron tres bicicletas panaderas con sus únicos ahorros y se pusieron a trabajar. Se encargaban de repartir diarios, se paraban a esperar en las puertas de los mercados por si alguien necesitaba ayuda en el transporte de sus bolsas hasta sus hogares, repartían las comidas de los restaurantes a las casas (este trabajo fue el más difícil porque la gente temía que se las robaran, pero al generar buenas impresiones en el barrio cada vez se fueron adaptando mejor).
-	Al año siguiente los chicos ya recibían en sus casas pedidos de compras. Ya no solo se trataba de llevar las compras sino que también hacerlas. La gente ganaba su confianza y con ello popularidad en las calles. Algunos restaurantes empezaron a encargarles pedidos, sobre todo los que eran para las fábricas y requieren más de un viaje por la cantidad (tanto de pedidos como de empleados). 
-	Al cabo de unos 5 años, alquilaron un terreno en una esquina y desde allí empezaron a “contratar” a otros jóvenes en su anterior situación. Empezaron a trabajar con más locales de comidas e incluso en Capital. Dejaron de repartir diarios y las compras de los supermercados, ya que donde más se ganaba y más pedidos se obtenían era en el delivery de comidas, en especial las rápidas.
-	En cuanto pudieron se mudaron a Capital Federal porque allí llamarían mucho más la atención.Allí abrieron un comercio más grande, consiguieron quien les hiciera y mantuviese una página web por donde podrían llegar a todas las personas y locales de una forma más cómoda e incluso formal.
-	La competencia crecía y ellos se iban quedando detrás, no tenían suficientes ciclomotores. En vez de competir “fuego contra fuego”, ya siendo empresarios decidieron aumentar la eficiencia y comodidad en la comunicación. Pasaron de página web + llamadas telefónicas a una aplicación para dispositivos móviles. Allí se encontraría el primer inmenso paso de Fasty a la competencia de delivery.
-	A día de hoy aún se mantienen en Capital Federal, donde se ubica su sede central. Desde allí manejan a sus repartidores y “Fasty” consigue llegar a todas sus casas con su pedido en el tiempo más reducido de toda la competencia.
-
-
-
-
-        Relevamientos
-        
--¿Tiene la empresa una oficina o sede donde los empleados estén esperando a que se les asigne un pedido?¿O todos salen desde sus propias casas con sus propios medios de transporte?
--No, todos nuestros empleados parten desde donde se encuentren en el momento que se les asigna un pedido.
-
--¿Sus empleados trabajan todo el día hasta recibir un pedido o tienen un horario establecido en el que podrían o no recibir pedidos?
--Tienen un horario de trabajo en el que todos los pedidos que se encarguen en su zona deben ser tomados por el correspondiente empleado. Fuera del horario de trabajo del mismo, los pedidos serán encargados a otro empleado.
-
--¿Cada cuánto tiempo se otorgan los salarios?¿Son fijos? De ser así,¿varían dependiendo de la zona?
--Los salarios se entregan por semana, son fijos pero pueden aumentar por la cantidad de pedidos o distancia recorrida.
-
--¿Cuáles son los métodos de pago? 
--Efectivo. El dinero recibido será depositado por la empresa de Delivery en cuentas bancarias de los locales.
-
--¿La empresa posee un sistema de encargos o los pedidos son de entrega “inmediata”?
--No posee un sistema de encargos ya que el encargo se realizaría con el local de comida directamente.
-
--¿Cuál es el horario disponible para realizar pedidos?
--El horario que tienen los comercios, para los cuales hacen el delivery.
-
--Si llegase a presentarse un retraso, ¿Cómo se le informa al cliente que su pedido no llegará al horario notificado?
--Se le puede informar con un mensaje al teléfono celular.
-
--¿Qué beneficio tienen los clientes frecuentes y cuándo se consideran de ese tipo?
--El beneficio puede ser un 10% de descuento en su compra. El beneficio lo obtiene una vez que paso los 8 pedidos.
-
--En caso de un accidente de parte del empleado, en su recorrido para entregar el pedido, ¿Cómo procede la empresa frente a esta situación?
--Si en el accidente se perdió el pedido, o no se encuentra en óptimo estado, se hace cargo del costo de reposición la empresa de delivery.
-
--¿Se pueden reemplazar repartidores en caso de licencia o enfermedad?
--Sería conveniente dado que se puede perder clientela.
-
--¿Se cobra el envio? ¿Es un precio establecido o varía por la distancia del recorrido/método de transporte?
--Se cobra una suma fija siempre que la entrega sea dentro de la ciudad donde está establecido el local.
-
--¿Cómo se verifica la entrega de un pedido?
--Con la conformidad que hace el repartidor de la entrega del dinero a la empresa.
-
--¿Qué ocurre en caso de que se quiera cancelar el pedido?
--El pedido se podrá cancelar, siempre y cuando no haya sido despachado.
-
--¿Cuánto tiempo debe pasar para que el pedido ya no se pueda cancelar? ¿Se le notifica al cliente o está escrito en los términos de uso de la app?
--Las reglas las conoce el cliente con anterioridad.
-
--¿La empresa dispone de algún medio que permita a los clientes tener la opción de elegir un determinado repartidor? De no ser así, detalle el funcionamiento.
--No puede elegir, cada uno se desplaza únicamente en su zona.
-
--¿Los empleados trabajan todos los días? En caso afirmativo, ¿Cuándo es el día franco?
--Los empleados deben tener días de franco y estos son dos a la semana. Los días no son fijos, van rotando por semana.
-
--¿Cuántos viajes puede realizar un mismo empleado en un mismo día?
--Luego de seis horas de conducción diaria, el conductor deberá tomar un descanso semanal.
-
--¿Existe algún tipo de límite territorial y/o barrial para los empleados al momento de realizar entregas?
--En el caso de la ciudad de Buenos Aires, el límite representa cada comuna.
--¿Qué ocurre en caso de que un cliente quiera hacer un pedido a un lugar que se encuentre muy lejos de la zona donde se realiza el mismo?
--Se le contesta que no es posible realizar la entrega.
-
--¿Dónde se guardan o de qué manera se almacenan las copias de los pedidos y sus respectivos tickets?
--Están archivadas en los ficheros.
-
--¿Qué ocurre en el caso de que en el local de comidas no puedan abastecer el pedido realizado?
--La única razón es la falta de stock y en ese caso no se realiza. Esa verificación se hace antes de concretar el pedido.
-
--¿Qué ocurre en caso de que el pedido llegue deteriorado o no sea el correcto? 
--Si se comprueba que la responsabilidad es del repartidor, se deberá reponer y se le descuenta de sus haberes. En cambio, si la responsabilidad es del local, éste se deberá hacer cargo.
-
--¿Cómo incorporan a los empleados?
--Los empleados deberán ir a la sede donde se sitúa la empresa de Delivery donde se los entrevistará. Serán admitidos si cumplen los requisitos: ser mayor de 18 años, disponer de un teléfono con la línea habilitada, tener un medio de transporte  (bicicleta o ciclomotores). En caso de disponer de auto o moto, se debe presentar además la documentación del vehículo (licencia de conducir, seguro del automóvil, cédula verde o azul del vehículo).
-
--¿Cómo incorporan a los locales que formarán parte del reparto?
--El dueño del local que quiera aparecer en la página deberá llenar un formulario donde se le pedirán lo siguiente: país, ciudad, tipo de empresa, correo electrónico, entre otros datos tanto de la empresa como personales. Se verificará que los locales preparen comida rápida.Y se esperará la confirmación de los directivos.  
-
--¿Cuánto recibe la empresa por publicar los locales en el catálogo?
--Recibimos un 25% del ingreso total por local.
 
 
             Circuitos
@@ -241,5 +148,13 @@ Objetivo: Administrar y gestionar el delivery de los pedidos de locales de comid
 Contexto:
 
 ![13](https://user-images.githubusercontent.com/78242717/162631432-d813595e-4e51-49c0-95e1-84f50947ca3a.png)
+
+       Diagramas de Flujo de Datos
+
+Solicitud del pedido (burbuja 1):
+
+Comienza con la solicitud del pedido del cliente de un determinado pedido. Se verifica el stock, si hay stock la empresa se encargará de registrar esa solicitud e informar que la solicitud es aceptada. Si no hay stock se le avisa que la solicitud no podrá ser realizada y se cancela. Esta verificación se hace antes de concretar el pedido.
+
+
 
 
