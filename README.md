@@ -186,6 +186,7 @@ Al inicio de la jornada laboral los repartidores tendrán que confirmar a la emp
 
         Cursogramas
 Cursograma 1
+
 ![5](https://user-images.githubusercontent.com/78242717/162631275-cbafd37a-9354-4114-916c-1eff0e4b0770.jpg)
 
 Cursograma 2
