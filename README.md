@@ -21,11 +21,6 @@ Cuaderno de Carga:
 
 -Descripción de Almacenes (Modelo Relacional).
 
--Diccionario de Datos.
-
--Diseño de Salidas.
-
--Supuestos.
 
 
             Circuitos
@@ -155,6 +150,98 @@ Solicitud del pedido (burbuja 1):
 
 Comienza con la solicitud del pedido del cliente de un determinado pedido. Se verifica el stock, si hay stock la empresa se encargará de registrar esa solicitud e informar que la solicitud es aceptada. Si no hay stock se le avisa que la solicitud no podrá ser realizada y se cancela. Esta verificación se hace antes de concretar el pedido.
 
+![1](https://user-images.githubusercontent.com/78242717/162666037-53783dc8-3b9c-4d94-adf5-2babc5a49329.png)
+
+![2](https://user-images.githubusercontent.com/78242717/162666038-a510c54c-83bf-4c5f-876e-2fe09b004468.png)
 
 
+
+Registrar cliente y procesar el pedido (burbuja 2) : 
+
+En caso de tener stock, el cliente verifica el precio de la comida junto con el envío, si está de acuerdo con el precio, procede a realizar su pedido, caso contrario se cancela. Si el pedido se realiza, la empresa registra al cliente en caso de no existir. Si ya está registrado, únicamente se registra al pedido. Luego se emite el ticket y es enviado al cliente. El cliente recibe un aviso y espera una respuesta de la empresa de delivery que le diga cuanto va a tardar.
+
+
+![4](https://user-images.githubusercontent.com/78242717/162666132-7c6deb76-8b92-411d-83fa-3d514b5f3714.png)
+![3](https://user-images.githubusercontent.com/78242717/162666137-53962e9a-41ea-4638-b0e7-b07f97dbe488.png)
+
+
+
+Seleccionar repartidor (burbuja 3):
+
+Una vez realizado el pedido, la empresa envia esa información a algún repartidor. Para eso, primero deberá asignar un repartidor a un determinado pedido, la información de dicho pedido será enviada al local de comida. Caso contrario, el circuito comienza nuevamente, seleccionando a otro repartidor.
+
+
+![5](https://user-images.githubusercontent.com/78242717/162666190-fcb047c9-6dd5-4f16-8bd0-66a41fa95af1.png)
+
+Notificación al local de comida (burbuja 4):
+
+La empresa de Delivery procederá a enviarle la información del pedido al local de comida rápida con todo lo que tendrá que hacer (quién es el repartidor, quién y qué pide, DNI, etc). Con la información recibida previamente el local de comida rápida confecciona el “Informe del pedido”. Luego, cocina el pedido, lo prepara para ser transportado y lo almacena hasta que llegue el repartidor.
+
+![6](https://user-images.githubusercontent.com/78242717/162666312-2c01fbe0-a8af-43ee-adc5-7884b74642b3.png)
+
+
+Notificación al repartidor y cliente (burbuja 5):
+
+La empresa de Delivery procederá a enviarle la información del pedido y del cliente. El repartidor asignado anota todos los datos en “Informe del Cliente-Pedido” y se dirige al restaurante de comidas rápidas, donde se verifica que el n° pedido que aparece en el documento que trae el repartidor concuerde con el que está en el documento creado por el local de comidas (“Informe Pedido”). Si coincide, compra y recoge el pedido. El documento (“Informe Pedido”) servirá para indicarle al cliente el precio original de su comida por si presenta alguna duda/queja.  Y si no coincide, el local de comidas le informará a la empresa que ese pedido ha sido rechazado.
+La página web envía una alerta al cliente diciéndole que su pedido está en camino o está saliendo y llegará en un tiempo determinado
+
+
+
+![7](https://user-images.githubusercontent.com/78242717/162666394-d15aab5c-d8f9-4cad-b99e-4679b36d2f4d.png)
+
+![8](https://user-images.githubusercontent.com/78242717/162666444-bd374d64-f292-44aa-83e3-01f2688e4014.png)
+
+
+Entrega, Pago y Reposición del pedido (burbuja 6):
+
+El repartidor llega a la ubicación indicada por el cliente y procede a entregarle el pedido. A continuación, el cliente deberá verificar que su pedido sea el correcto y que esté en buenas condiciones, de ser así procede a pagar, entregando el monto total del pedido al repartidor. Si el pedido no es el correcto o no se encuentra en buenas condiciones, el sistema procederá a enviarle el “Informe de fallos” a la empresa, el cual le servirá para conocer en detalle la integridad del pedido
+
+![10](https://user-images.githubusercontent.com/78242717/162666622-c21a1b6c-f4b8-476d-bf3a-652c8134e250.png)
+![9](https://user-images.githubusercontent.com/78242717/162666623-e7ad32ab-aef1-4b0f-8264-e85933d1fc84.png)
+
+
+Incorporación de empleados (burbuja 7):
+
+Los empleados aptos deberán ser registrados en la empresa, informando todos sus datos. A continuación, el sistema le informará a la empresa que un nuevo empleado ha sido registrado.
+
+![11](https://user-images.githubusercontent.com/78242717/162666738-957a0b3a-7b3f-498e-9022-6ef7be19e1eb.png)
+
+Liquidación de haberes (burbuja 8):
+
+La liquidación será por semana (calendario) y consta de un monto básico. A continuación, se deberá calcular el sueldo del repartidor dependiendo de su asistencia, la zona en la que se maneja, y sumándose además el dinero que se le entrega de propina, costo del viaje y del bonus por recorrido. El cálculo se hará teniendo en cuenta la cantidad de días que el repartidor hizo alguna entrega en la semana. A fin de cada semana la empresa de delivery emitirá el recibo de sueldo.
+
+
+![13](https://user-images.githubusercontent.com/78242717/162666839-e14b5590-f738-4747-8367-29349dd5973f.png)
+![12](https://user-images.githubusercontent.com/78242717/162666842-c413399f-8d74-41db-ab0f-160019f96684.png)
+
+Incorporación de locales (burbuja 9):
+
+Los locales aptos serán registrados en la empresa informando sus datos. Una vez obtenidos los datos, el sistema le enviará un aviso a la empresa indicando que un nuevo local ha sido registrado
+
+
+![14](https://user-images.githubusercontent.com/78242717/162666925-14fb2a4e-47c5-429d-97dc-baa0d18c0580.png)
+
+Rendición del cobro (burbuja 10):
+
+Al finalizar el día (calendario) los montos totales por el cobro de los pedidos serán entregados. A continuación, la empresa de Delivery deberá depositar en cuentas bancarias de los locales el dinero recibido. Luego confecciona el documento “Recibo de Abono por Transferencia”, el cual enviará a los locales.
+
+
+![15](https://user-images.githubusercontent.com/78242717/162667053-02f7e8ca-3ed6-450e-bf22-34bf8805a070.png)
+![16](https://user-images.githubusercontent.com/78242717/162667056-963bda6f-e22f-4de3-bf31-9ca6c16ee43b.png)
+
+
+Registrar asistencia (burbuja 11):
+
+Al inicio de la jornada laboral los repartidores tendrán que confirmar a la empresa que asistieron para empezar a recibir pedidos
+
+
+![17](https://user-images.githubusercontent.com/78242717/162667110-28aca09f-4db3-4fb5-94e1-c095287cab11.png)
+
+
+			Modelo relacional
+			
+			
+
+
+![relacional](https://user-images.githubusercontent.com/78242717/162667175-8c29a136-123c-4a70-92c7-f690c7cc0cad.png)
 
